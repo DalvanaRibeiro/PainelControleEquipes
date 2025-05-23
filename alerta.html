@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Alerta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="status-header">
+    <span class="system-id">📟 EQUIPES DE DESENVOLVIMENTO | </span>
+    <span class="status-text">STATUS: TRABALHANDO 🛠️</span>
+  </div>
+
+  <div class="container alerta">
+    <div class="alerta-box">
+      <h2>⚠️ Atenção!</h2>
+      <p id="nomeExibido">Carregando...</p>
+    </div>
+  </div>
+<footer style="text-align: center">
+    Criado por Dalvana Ribeiro
+</footer>
+
+  <script>
+    const nomePO = localStorage.getItem('nomePO');
+    document.getElementById('nomeExibido').textContent = nomePO || 'Desconhecido';
+  </script>
+</body>
+</html>
